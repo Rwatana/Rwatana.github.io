@@ -2,6 +2,7 @@ baseURL = "http://Rwatana.github.io"
 title   = "R Blog"
 languageCode = "en-us"
 theme = "hello-friend-ng"
+author = "Ryoma Watanabe"
 
 PygmentsCodeFences = true
 PygmentsStyle = "monokai"
