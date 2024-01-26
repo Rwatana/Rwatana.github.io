@@ -1,4 +1,4 @@
-baseURL = "localhost"
+baseURL = "http://Rwatana.github.io"
 title   = "Hello Friend NG"
 languageCode = "en-us"
 theme = "hello-friend-ng"
