@@ -1,5 +1,5 @@
 baseURL = "http://Rwatana.github.io"
-title   = "Hello Friend NG"
+title   = "R Blog"
 languageCode = "en-us"
 theme = "hello-friend-ng"
 
@@ -215,23 +215,19 @@ disableHugoGeneratorInject = false
   #
   [[params.social]]
     name = "twitter"
-    url  = "https://twitter.com/"
+    url  = "https://twitter.com/rym12313/"
 
   [[params.social]]
     name = "email"
-    url  = "mailto:nobody@example.com"
+    url  = "mailto:ryoma.wat@gmail.com"
 
   [[params.social]]
     name = "github"
-    url  = "https://github.com/"
+    url  = "https://github.com/Rwatana/"
 
   [[params.social]]
     name = "linkedin"
-    url  = "https://www.linkedin.com/"
-
-  [[params.social]]
-    name = "stackoverflow"
-    url  = "https://www.stackoverflow.com/"
+    url  = "https://www.linkedin.com/in/ryoma-watanabe-6847242b0/"
 
 [languages]
   [languages.en]
