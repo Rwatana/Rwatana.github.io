@@ -112,7 +112,7 @@ disableHugoGeneratorInject = false
 [menu]
   [[menu.main]]
     identifier = "about"
-    name       = "AboutMe"
+    name       = "About"
     url        = "aboutme/"
     folder     = "docs"
   [[menu.main]]
@@ -123,6 +123,6 @@ disableHugoGeneratorInject = false
 
   [[menu.main]]
     identifier = "dev"
-    name  = "Dev"
+    name  = "DevLog"
     url = "dev/"
     folder     = "docs"
