@@ -5,8 +5,7 @@ draft: false
 toc: false
 images:
 tags:
-  - infrastructure
-  - engineering
+
 ---
 
 ## Abstract
