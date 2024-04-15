@@ -1,4 +1,4 @@
-baseURL = "https://rwatana.githu.io/blog"
+baseURL = "https://rwatana.githu.io"
 title   = "The R blog"
 subtitle = "hello"
 DefaultContentLanguage = "en"
