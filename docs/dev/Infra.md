@@ -7,6 +7,7 @@ images:
 tags:
   - infrastructure
   - engineering
+  - hoge
 ---
 
 ## Abstract

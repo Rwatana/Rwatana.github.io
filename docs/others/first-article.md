@@ -5,7 +5,7 @@ draft: false
 toc: false
 images:
 tags:
-  - daily
+  - hoge
 ---
 
 Hugoで簡単なブログを作りました。

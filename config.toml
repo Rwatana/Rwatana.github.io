@@ -44,8 +44,9 @@ disableHugoGeneratorInject = false
   hrefTargetBlank = true
 
 [taxonomies]
-  tag      = "tags"
-  category = ""
+    category = "blog"
+    tag      = "tags"
+    series   = "series"
 
 [params]
   dateform        = "Jan 2, 2006"
@@ -53,9 +54,13 @@ disableHugoGeneratorInject = false
   dateformNum     = "2006-01-02"
   dateformNumTime = "2006-01-02 15:04 -0700"
 
+  homeSubtitle = "A simple and beautiful blog"
+
+  
+
   # Metadata mostly used in document's head
   description = "Nice theme for homepages and blogs"
-  keywords = ""
+  keywords = "homepage, blog"
   images = [""]
   contentDir = "docs"
 
