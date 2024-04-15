@@ -3,7 +3,7 @@ name: Deploy Hugo
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   deploy:
@@ -24,7 +24,7 @@ jobs:
         run: hugo --minify
 
       - name: Push to blog repo
-        uses: cpina/github-action-push-to-another-repository@master
+        uses: cpina/github-action-push-to-another-repository@main
         env:
         # 事前準備で登録しておいたトークン名を書く
           API_TOKEN_GITHUB: ${{ secrets.HUGO_DEPLOY_TOKEN }}
