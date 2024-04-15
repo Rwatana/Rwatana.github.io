@@ -49,12 +49,10 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
         run: |
-          hugo \
-            --minify \
-            --baseURL "${{ steps.pages.outputs.base_url }}/"
+          hugo
           mkdir -p public  # <- この行を追加
       - name: Upload artifact
-        uses: actions/upload-artifact@v2  # <- actions/upload-pages-artifact@v1 を actions/upload-artifact@v2 に変更
+        uses: actions/upload-artifact@v2
         with:
           name: public
           path: ./public
