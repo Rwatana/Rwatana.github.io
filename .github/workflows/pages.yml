@@ -2,37 +2,37 @@ name: Deploy Hugo
 
 # GitHub Actionsのトリガーを好きなように設定する
 on:
-push:
+  push:
     branches:
     - master
 
 jobs:
-deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
+      - uses: actions/checkout@v2
         with:
-        submodules: true
-        fetch-depth: 0
+          submodules: true
+          fetch-depth: 0
 
-    - name: Setup Hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
         # Versionは最新のものにする
-        hugo-version: 0.102.3
+          hugo-version: 0.102.3
 
-    - name: Build
+      - name: Build
         run: hugo --minify
 
-    - name: Push to blog repo
+      - name: Push to blog repo
         uses: cpina/github-action-push-to-another-repository@master
         env:
         # 事前準備で登録しておいたトークン名を書く
-        API_TOKEN_GITHUB: ${{ secrets.HUGO_DEPLOY_TOKEN }}
+          API_TOKEN_GITHUB: ${{ secrets.HUGO_DEPLOY_TOKEN }}
         with:
         # Hugoは`public`ディレクトリにビルド生成物を出力するので
-        source-directory: "public"
+          source-directory: "public"
         # blogレポジトリの所有者アカウント名
-        destination-github-username: "Rwatana"
+          destination-github-username: "Rwatana"
         # 生成物をPushするレポジトリ名（今回はblog）
-        destination-repository-name: "rwatana.github.io"
+          destination-repository-name: "rwatana.github.io"
