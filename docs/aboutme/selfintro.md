@@ -1,11 +1,11 @@
 ---
 title: "自己紹介"
-data: false
+date: false
 draft: false
 toc: false
 images:
 tags:
-  - daily
+  - me
 ---
 ## 概要
 
