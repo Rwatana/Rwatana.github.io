@@ -66,53 +66,10 @@ jobs:
         with:
           path: ./docs
 
-  # Deployment job
-
       - name: Deploy
-        run: |
-          git config --global user.name "${{ secrets.GITHUB_ACTOR }}"
-          git config --global user.email "${{ secrets.GITHUB_ACTOR }}@users.noreply.github.com"
-          if [ -d "docs" ]; then
-            cd docs
-            git init
-            git add .
-            git commit -m "Deployed using GitHub Actions"
-            git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" master:gh-pages
-          else
-            echo "docs directory not found."
-          fi
-
-
-
-# name: github pages
- 
-# on:
-#   push:
-#     branches:
-#       - main
- 
-# jobs:
-#   build-deploy:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Checkout Source
-#         uses: actions/checkout@v2
- 
-#       - name: Clone submodule
-#         run: git submodule update --init --recursive
- 
-#       - name: Hugo Setup
-#         uses: peaceiris/actions-hugo@v2.4.8
-#         with:
-#           hugo-version: latest
-#           extended: true
- 
-#       - name: Build Hugo
-#         run: hugo -v
- 
-#       - name: Deploy
-#         uses: peaceiris/actions-gh-pages@v3.5.6
-#         with:
-#           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
-#           publish_dir: ./docs
-#           publish_branch: main
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: Rwatana/rwatana.github.io
+          publish_branch: main
+          cname: ryomablog.com
