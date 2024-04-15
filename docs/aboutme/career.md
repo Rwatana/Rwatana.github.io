@@ -1,5 +1,6 @@
 ---
 title: "経歴/学歴"
+data: false
 draft: false
 toc: false
 images: 
