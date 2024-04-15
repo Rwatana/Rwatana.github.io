@@ -2,8 +2,9 @@
 title: "経歴/学歴"
 draft: false
 toc: false
-images:
-
+images: 
+tags:
+  - daily
 ---
 
 Hugoで簡単なブログを作りました。
