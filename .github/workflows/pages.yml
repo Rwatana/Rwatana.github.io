@@ -72,8 +72,12 @@ jobs:
         run: |
           git config --global user.name "${{ secrets.GITHUB_ACTOR }}"
           git config --global user.email "${{ secrets.GITHUB_ACTOR }}@users.noreply.github.com"
-          cd public
-          git init
-          git add .
-          git commit -m "Deployed using GitHub Actions"
-          git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" master:gh-pages
+          if [ -d "public" ]; then
+            cd public
+            git init
+            git add .
+            git commit -m "Deployed using GitHub Actions"
+            git push --force "https://${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}" master:gh-pages
+          else
+            echo "public directory not found."
+          fi
