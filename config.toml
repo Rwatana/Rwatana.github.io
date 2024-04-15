@@ -15,10 +15,10 @@ copyright = "This work is licensed under a Creative Commons Attribution-NonComme
 # disqusShortname = ""
 
 archetypeDir = "archetypes"
-contentDir   = "content"
+contentDir   = "docs"
 dataDir      = "data"
 layoutDir    = "layouts"
-publishDir   = "content"
+publishDir   = "docs"
 
 buildDrafts  = false
 buildFuture  = false
@@ -57,7 +57,7 @@ disableHugoGeneratorInject = false
   description = "Nice theme for homepages and blogs"
   keywords = ""
   images = [""]
-  contentDir = "content"
+  contentDir = "docs"
 
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
@@ -114,15 +114,15 @@ disableHugoGeneratorInject = false
     identifier = "about"
     name       = "AboutMe"
     url        = "aboutme/"
-    folder     = "content"
+    folder     = "docs"
   [[menu.main]]
     identifier = "posts"
     name       = "Others"
     url        = "others/"
-    folder     = "content"
+    folder     = "docs"
 
   [[menu.main]]
     identifier = "dev"
     name  = "Dev"
     url = "dev/"
-    folder     = "content"
+    folder     = "docs"
