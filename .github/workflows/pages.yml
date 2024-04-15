@@ -52,9 +52,11 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/"
+          mkdir -p public  # <- この行を追加
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
+        uses: actions/upload-artifact@v2  # <- actions/upload-pages-artifact@v1 を actions/upload-artifact@v2 に変更
         with:
+          name: public
           path: ./public
 
   # Deployment job
